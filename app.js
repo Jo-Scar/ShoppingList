@@ -14,11 +14,12 @@ function addToShoppingList() {
 
 // Remove Item from Shopping List 
 
+let inputRemove = document.querySelector("#inputForRemove");
+
 function removeFromShoppingList() {
     let shoppingList = input.value;
     if (shoppingList === "") {
         list.innerHTML -= `<li>${shoppingList}</li>`;
-        input.value = "";
     }
     else {
         alert("This Field is Required");
